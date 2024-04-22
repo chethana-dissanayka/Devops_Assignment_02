@@ -12,7 +12,7 @@ app.get("/ready", function (req, res) {
   res.send('{ "response": " Great!, Welcome to UOR" }');
 });
 
-//listen to port 3000 by default
+
 app.listen(process.env.PORT || 5555, function () {
   console.log("App listening on port 5555!");
 });
