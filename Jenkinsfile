@@ -19,9 +19,9 @@ pipeline {
 
 
             steps {
-                withCredentials([string(credentialsId: 'test-dockerhub-password', variable: 'test-dockerhub-password')]){
+                withCredentials([string(credentialsId: 'test-password', variable: 'test-password')]){
    
-               bat'docker login -u chethanadissanayaka -p ${test-dockerhub-password}'
+               bat'docker login -u chethanadissanayaka -p ${test-password}'
                 }
             }
         }
